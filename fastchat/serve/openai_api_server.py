@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """A server that provides OpenAI-compatible RESTful APIs. It supports:
 
 - Chat Completions. (Reference: https://platform.openai.com/docs/api-reference/chat)
@@ -22,7 +23,7 @@ from fastapi.responses import StreamingResponse, JSONResponse
 from fastapi.security.http import HTTPAuthorizationCredentials, HTTPBearer
 import httpx
 
-from pydantic_settings import BaseSettings
+from pydantic import BaseSettings
 import shortuuid
 import tiktoken
 import uvicorn
